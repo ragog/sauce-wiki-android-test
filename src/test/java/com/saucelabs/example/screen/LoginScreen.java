@@ -25,9 +25,13 @@ public class LoginScreen extends AbstractScreen {
     }
 
     public void performLogin(Credentials credentials) {
+        takeScreenshot();
         usernameField.sendKeys(credentials.username);
+        takeScreenshot();
         passwordField.sendKeys(credentials.password);
+        takeScreenshot();
         loginButton.click();
+        takeScreenshot();
     }
 
 }

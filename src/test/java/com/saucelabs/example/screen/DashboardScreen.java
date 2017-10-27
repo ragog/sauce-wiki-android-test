@@ -26,11 +26,15 @@ public class DashboardScreen extends AbstractScreen {
     }
 
     public void navigateToLogin() {
+        takeScreenshot();
         overflowButton.click();
+        takeScreenshot();
         loginButton.click();
+        takeScreenshot();
     }
 
     public boolean isActive() {
+        takeScreenshot();
         try {
             return searchBar.isDisplayed();
         } catch (NoSuchElementException e) {
