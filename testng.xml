@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test-class Suite" parallel="tests" thread-count="4">
+    <test name="Test 1">
+        <parameter name="platformName" value="android" />
+        <parameter name="platformVersion" value="5.1" />
+        <classes>
+            <class name="com.saucelabs.example.WikiAndroidTest" />
+        </classes>
+    </test>
+    <test name="Test 2">
+        <parameter name="platformName" value="android" />
+        <parameter name="platformVersion" value="6" />
+        <classes>
+            <class name="com.saucelabs.example.WikiAndroidTest" />
+        </classes>
+    </test>
+    <test name="Test 3">
+        <parameter name="platformName" value="android" />
+        <parameter name="platformVersion" value="7" />
+        <classes>
+            <class name="com.saucelabs.example.WikiAndroidTest" />
+        </classes>
+    </test>
+    <test name="Test 4">
+        <parameter name="platformName" value="android" />
+        <parameter name="platformVersion" value="5" />
+        <classes>
+            <class name="com.saucelabs.example.WikiAndroidTest" />
+        </classes>
+    </test>
+</suite>
