@@ -4,6 +4,7 @@ import com.saucelabs.example.util.ResultReporter;
 import com.saucelabs.saucerest.SauceREST;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
@@ -68,7 +69,6 @@ public class AbstractTest {
 
         }
 
-        capabilities.setCapability("testobject_api_key", rdcApiKey);
         capabilities.setCapability("platformName", platformName);
         capabilities.setCapability("platformVersion", platformVersion);
         capabilities.setCapability("phoneOnly", "true");
